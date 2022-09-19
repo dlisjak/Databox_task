@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platform Admin</title>
+  <link rel="stylesheet" href="main.css">
+  <link href='https://css.gg/search.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="navigation">
+    <div class="navigationContainer">
+      <a class="logo" href="/">PLATFORM ADMIN</a>
+
+      <div class="navigationFilter">
+        <span>
+          FILTER:
+        </span>
+        <ul class="navigationFilters">
+          <li><button class="-selected" onclick="handleButtonClick(this)">All</button></li>
+          <li><button onclick="handleButtonClick(this)">Free</button></li>
+          <li><button onclick="handleButtonClick(this)">Paying</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="topbar">
+    <div class="topbarContainer">
+      <div class="topbarInputContainer">
+        <i class="gg-search"></i>
+        <input class="topbarInput" type="text" placeholder="Enter a country" oninput="handleInputChange(this)" />
+      </div>
+      <button class="topbarButton">Create new Account</button>
+    </div>
+  </div>
+
+  <main class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Country</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+    </table>
+  </main>
+
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
